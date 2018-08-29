@@ -1,0 +1,6 @@
+table {
+	width: 100%;
+}
+.selectedRow {
+  background-color: #f5f5f5; 
+}

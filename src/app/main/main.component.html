@@ -1,0 +1,29 @@
+<div class="grid-container">
+  <mat-grid-list cols="2" rowHeight="320px" gutterSize="2px">
+    <mat-grid-tile [colspan]="scheme[0].cols" [rowspan]="scheme[0].rows">
+         <app-feed-view> </app-feed-view>   
+    </mat-grid-tile>
+        <mat-grid-tile [colspan]="scheme[1].cols" [rowspan]="scheme[1].rows">
+          <mat-card class="dashboard-card table">
+
+          <mat-card-content class="dashboard-card-content">
+          <app-feed-table></app-feed-table>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+        <mat-grid-tile [colspan]="scheme[2].cols" [rowspan]="scheme[2].rows">
+      <mat-card class="dashboard-card table">
+        <mat-card-content class="dashboard-card-content">
+          <app-signals></app-signals>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+        <mat-grid-tile [colspan]="scheme[3].cols" [rowspan]="scheme[3].rows">
+      <mat-card class="dashboard-card table">
+        <mat-card-content class="dashboard-card-content">
+          <app-calendar></app-calendar>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
